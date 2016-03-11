@@ -38,7 +38,7 @@ body{
 
 a{
     text-decoration:none;
-    text-decoration:bold;
+    font-weight: bold;
 }
 
 a:link {
