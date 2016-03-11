@@ -1,0 +1,121 @@
+<!--DOCTYPE html -->
+<html>
+
+<head>
+<title>Alyssa McDevitt</title>
+<link rel="icon" href="images/me.png">
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700italic" rel="stylesheet" type="text/css">
+
+
+<script>
+//Shoutout to Chris Coyier for the hourly changing CSS script. You can find it here: https://css-tricks.com/snippets/javascript/different-stylesheet-pending-the-time-of-day/
+
+    function getStylesheet() {
+        var currentTime = new Date().getHours();
+        if (0 <= currentTime&&currentTime < 5) {
+            document.write("<link rel='stylesheet' href='night.css' type='text/css'>");
+        }
+        if (5 <= currentTime&&currentTime < 10) {
+            document.write("<link rel='stylesheet' href='sunrise.css' type='text/css'>");
+        }
+        if (10 <= currentTime&&currentTime < 15) {
+            document.write("<link rel='stylesheet' href='day.css' type='text/css'>");
+        }
+        if (15 <= currentTime&&currentTime < 20) {
+            document.write("<link rel='stylesheet' href='sunrise.css' type='text/css'>");
+        }
+        if (20 <= currentTime&&currentTime <= 24) {
+            document.write("<link rel='stylesheet' href='night.css' type='text/css'>");
+        }
+    }
+getStylesheet();
+/*Easter egg here, If you're a code enthusiast, I'll waste your time with a backstory. All the songs here are from Animal Crossing. Some are according to time, others arent, but they remind me of that timeframe. Playing DS with my cousin and getting immersed in animal crossing and hacking it (gotta love DS action replay haha) was one of the pushing factors for me to get into CS. Oh and the music is pretty chill.
+
+    Enough of my yaking, enjoy the tunes.
+*/
+    function music() {
+        var currentTime = new Date().getHours();
+        if (0 <= currentTime&&currentTime < 5) {
+            var Audio = document.getElementById("nightAudio");
+            if (Audio.paused) {
+                Audio.play();
+            } else {
+                Audio.pause();
+            }
+        }
+        if (5 <= currentTime&&currentTime < 10) {
+            var Audio = document.getElementById("sunriseAudio");
+            if (Audio.paused) {
+                Audio.play();
+            } else {
+                Audio.pause();
+            }
+        }
+        if (10 <= currentTime&&currentTime < 15) {
+            var Audio = document.getElementById("dayAudio");
+            if (Audio.paused) {
+                Audio.play();
+            } else {
+                Audio.pause();
+            }
+        }
+        if (15 <= currentTime&&currentTime < 20) {
+            var Audio = document.getElementById("sunriseAudio");
+            if (Audio.paused) {
+                Audio.play();
+            } else {
+                myAudio.pause();
+            }
+        }
+        if (20 <= currentTime&&currentTime <= 24) {
+            var myAudio = document.getElementById("nightAudio");
+            if (myAudio.paused) {
+                myAudio.play();
+            } else {
+                myAudio.pause();
+            }
+        }
+    }
+</script>
+
+<!--if you cant run scripts, default to main CSS-->
+<noscript><link href="main.css" rel="stylesheet"></noscript>
+</head>
+
+<!--end head, start body-->
+<body>
+    <!--my face, click it for tunes. also, stuff about me.-->
+    <img id= "me" src="images/me.png" onclick="music()">
+    <div id="container">
+        <div id="content">
+            <h1><i>Hey there, I'm Alyssa McDevitt</i></h1>
+            <p>I'm a basic white girl that likes computers, music, and memes. Currently pouring my heart and soul into <a href="http://noisehubapp.com">NoiseHub</a>. <!--please check out noisehub. it's my baby <3 -->Just trying to learn more about this great big world. Feel free to check out the links below</p>
+            <br/><br/>
+            <div id="links">
+                <a class="link" href="https://www.linkedin.com/in/alyssa-mcdevitt-23b89294">LinkedIn</a>
+                <a class="link" href="https://twitter.com/amcdevitt97">Twitter</a>
+                <a class="link" href="https://github.com/amcdevitt97">GitHub</a>
+            </div>
+        </div>
+        <div id="background"></div>
+    </div>
+    <!--end stuff about me-->
+    <!--hidden music doodads-->
+    <audio id="nightAudio" style="visibility:hidden;" controls>
+        <source src="music/night.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="sunriseAudio" style="visibility:hidden;" controls>
+        <source src="music/sunrise.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+    </audio>
+    <audio id="dayAudio" style="visibility:hidden;" controls>
+        <source src="music/day.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+    </audio>
+    <!--end hidden music doodads-->
+</body>
+
+<!--FYI if you're a recruiter or someone important, please know i'm a professional and wouldn't actually do all this unnecessary commenting to any company projects. Just wanted to be a goof for this site. Much love and please accept me, -A -->
+
+</html>

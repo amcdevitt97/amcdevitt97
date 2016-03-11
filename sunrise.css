@@ -1,0 +1,73 @@
+body{
+    background-image: url("images/sunrise.png");
+    background-size: 100% 100%;
+}
+
+#background{
+    position: absolute;
+    background-color:grey;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    opacity:.5;
+    z-index:1;
+    width:90%;
+    margin-left:5%;
+    
+}
+
+#container {
+    position: relative;
+    overflow:auto;
+}
+
+#content {
+    position: relative;
+    font-family: 'Lato', sans-serif;
+    text-align:center;
+    z-index:2;
+    padding-left:10%;
+    padding-right:10%;
+    padding-bottom:5%;
+    color:black;
+}
+
+a{
+    text-decoration:none;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: white;
+}
+
+a:active {
+    color: black;
+}
+
+.link{
+    padding-left:5%;
+    text-transform:uppercase;
+}
+
+
+img{
+    position: relative;
+    height:40%;
+    width:auto;
+    display:block;
+    margin:auto;
+}
+
+h1{
+    font-size:250%;
+}
+p{
+    font-size:150%;
+}
