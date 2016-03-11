@@ -35,11 +35,11 @@ a{
 }
 
 a:link {
-    color: black;
+    color: grey;
 }
 
 a:visited {
-    color: black;
+    color: grey;
 }
 
 a:hover {
@@ -47,7 +47,7 @@ a:hover {
 }
 
 a:active {
-    color: black;
+    color: grey;
 }
 
 .link{
