@@ -5,7 +5,7 @@ body{
     background: -webkit-linear-gradient(top,  #3093e5 0%,#9dc6e8 53%,#539fe1 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom,  #3093e5 0%,#9dc6e8 53%,#539fe1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3093e5', endColorstr='#539fe1',GradientType=0 ); /* IE6-9 */
-
+    
 }
 
 #background{
@@ -36,10 +36,6 @@ body{
     color:black;
 }
 
-a{
-    text-decoration:none;
-    font-weight: bold;
-}
 
 a:link {
     color: black;

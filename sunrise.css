@@ -1,6 +1,11 @@
 body{
-    background-image: url("images/sunrise.png");
-    background-size: 100% 100%;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a72cd3+0,f9db2f+100 */
+    background: #a72cd3; /* Old browsers */
+    background: -moz-linear-gradient(top,  #a72cd3 0%, #f9db2f 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #a72cd3 0%,#f9db2f 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #a72cd3 0%,#f9db2f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a72cd3', endColorstr='#f9db2f',GradientType=0 ); /* IE6-9 */
+
 }
 
 #background{
@@ -29,11 +34,6 @@ body{
     padding-right:10%;
     padding-bottom:5%;
     color:black;
-}
-
-a{
-    text-decoration:none;
-    font-weight: bold;
 }
 
 a:link {
