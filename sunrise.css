@@ -33,14 +33,15 @@ body{
 
 a{
     text-decoration:none;
+    text-decoration:bold;
 }
 
 a:link {
-    color: grey;
+    color: black;
 }
 
 a:visited {
-    color: grey;
+    color: black;
 }
 
 a:hover {
@@ -48,7 +49,7 @@ a:hover {
 }
 
 a:active {
-    color: grey;
+    color: black;
 }
 
 .link{
