@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>EasySafe</title>
+<link rel='stylesheet' href='style.css' type='text/css' media='all' />
+
+</head>
+<body onLoad="alert('Just fyi this this is very very very alpha but we are working on it. do NOT actually use it for passwords yet pls ☺️')">
+
+<div id="title">
+<h2>EasySafe Password Generator</h2>
+</div>
+
+<div class="options">
+<ul>
+    <div id="content">
+        <p id="password">'Password'</p>
+    </div>
+    
+    <script>
+    
+    function generate(){
+        if (document.getElementById("Basic").checked === true){
+            document.getElementById("password").innerHTML = "basic";
+        }
+        else if (document.getElementById("DiceWare").checked === true){
+            document.getElementById("password").innerHTML = "diceware";
+        }
+        else if (document.getElementById("Acronym").checked === true){
+            document.getElementById("password").innerHTML = "acro";
+        }
+
+    }
+    </script>
+    
+    <div>
+        <li>
+            <input id="Basic" type="radio" name="option" value="B" >
+            <label for="option">Basic</label>
+            <div class="check"><div class="inside"></div></div>
+        </li>
+    </div>
+    
+    <div>
+        <li>
+            <input id="DiceWare" type="radio" name="option" value="D">
+            <label for="option">DiceWare</label>
+            <div class="check"><div class="inside"></div></div>
+        </li>
+    </div>
+    
+    <div>
+        <li>
+            <input id="Acronym" type="radio" name="option" value="A">
+            <label for="option">Acronym</label>
+            <div class="check"><div class="inside"></div></div>
+        </li>
+    </div>
+    
+    <button id="generate" onclick="generate()">Generate</button>
+        
+</ul>
+</div>
+
+</body>
+</html>
