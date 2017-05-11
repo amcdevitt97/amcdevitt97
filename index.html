@@ -2,94 +2,22 @@
 <html>
 
 <head>
-<title>Alyssa McDevitt</title>
-<link rel="icon" href="images/me.png">
-<link href="https://fonts.googleapis.com/css?family=Lato:400,700italic" rel="stylesheet" type="text/css">
-
-
-<script>
-//Shoutout to Chris Coyier for the hourly changing CSS script. You can find it here: https://css-tricks.com/snippets/javascript/different-stylesheet-pending-the-time-of-day/
-
-    function getStylesheet() {
-        var currentTime = new Date().getHours();
-        if (0 <= currentTime&&currentTime < 5) {
-            document.write("<link rel='stylesheet' href='night.css' type='text/css'>");
-        }
-        if (5 <= currentTime&&currentTime < 10) {
-            document.write("<link rel='stylesheet' href='sunrise.css' type='text/css'>");
-        }
-        if (10 <= currentTime&&currentTime < 15) {
-            document.write("<link rel='stylesheet' href='day.css' type='text/css'>");
-        }
-        if (15 <= currentTime&&currentTime < 20) {
-            document.write("<link rel='stylesheet' href='sunrise.css' type='text/css'>");
-        }
-        if (20 <= currentTime&&currentTime <= 24) {
-            document.write("<link rel='stylesheet' href='night.css' type='text/css'>");
-        }
-    }
-getStylesheet();
-/*Easter egg here, If you're a code enthusiast, I'll waste your time with a backstory. All the songs here are from Animal Crossing. Some are according to time, others arent, but they remind me of that timeframe. Playing DS with my cousin and getting immersed in animal crossing and hacking it (gotta love DS action replay haha) was one of the pushing factors for me to get into CS. Oh and the music is pretty chill.
-
-    Enough of my yaking, enjoy the tunes.
-*/
-    function music() {
-        var currentTime = new Date().getHours();
-        if (0 <= currentTime&&currentTime < 5) {
-            var Audio = document.getElementById("nightAudio");
-            if (Audio.paused) {
-                Audio.play();
-            } else {
-                Audio.pause();
-            }
-        }
-        if (5 <= currentTime&&currentTime < 10) {
-            var Audio = document.getElementById("sunriseAudio");
-            if (Audio.paused) {
-                Audio.play();
-            } else {
-                Audio.pause();
-            }
-        }
-        if (10 <= currentTime&&currentTime < 15) {
-            var Audio = document.getElementById("dayAudio");
-            if (Audio.paused) {
-                Audio.play();
-            } else {
-                Audio.pause();
-            }
-        }
-        if (15 <= currentTime&&currentTime < 20) {
-            var Audio = document.getElementById("sunriseAudio");
-            if (Audio.paused) {
-                Audio.play();
-            } else {
-                myAudio.pause();
-            }
-        }
-        if (20 <= currentTime&&currentTime <= 24) {
-            var myAudio = document.getElementById("nightAudio");
-            if (myAudio.paused) {
-                myAudio.play();
-            } else {
-                myAudio.pause();
-            }
-        }
-    }
-</script>
-
-<!--if you cant run scripts, default to main CSS-->
-<noscript><link href="main.css" rel="stylesheet"></noscript>
+	<title>Alyssa McDevitt</title>
+	<link rel="icon" href="images/me.png">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700italic" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="script.js" ></script>
+	<!--if you cant run scripts, default to main CSS-->
+	<noscript><link href="main.css" rel="stylesheet"></noscript>
 </head>
 
 <!--end head, start body-->
-<body>
+<body onload='getNewGif()'>
     <!--my face, click it for tunes. also, stuff about me.-->
-    <img id= "me" src="images/me.png" onclick="music()">
+    <img id="me" onclick="music()">
     <div id="container">
         <div id="content">
             <h1><i>Hey there, I'm Alyssa McDevitt</i></h1>
-            <p>Computer Science student that likes Lilly Pulitzer clothing, sweet tea, music, and memes. Lover of all things Apple. Currently pouring my heart and soul into <a href="http://noisehubapp.com" _target="blank">NoiseHub</a>. <!--please check out noisehub. it's my baby <3 -->Just trying to learn more about this great big world. Feel free to check out the links below</p>
+            <p>Computer Science student that likes Lilly Pulitzer clothing, sweet tea, music, and memes. Lover of all things tech and futuristic. Currently working on <a href="http://noisehubapp.com" _target="blank">NoiseHub</a> and school. <!--please check out noisehub. it's my baby <3 -->Just trying to learn more about this great big world. Feel free to check out the links below.</p>
             <br/><br/>
             <div id="links">
                 <a class="link"_target="blank" href="https://www.linkedin.com/in/alyssa-mcdevitt-23b89294">LinkedIn</a>
