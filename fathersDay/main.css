@@ -14,21 +14,26 @@ font-family: "Arial", sans-serif;
 }
 
 #beach{
-height: 200px;
+height: 300px;
 width:auto;
 }
 
 #pork{
-height: 200px;
+height: 300px;
 width:auto;
 }
 
 #trebek{
-height: 200px;
+height: 300px;
 width:auto;
 }
 
 .images{
 margin-left:20px;
 margin-right:20px;
+}
+
+audio{
+position:relative;
+top:200px;
 }
