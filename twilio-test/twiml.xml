@@ -1,5 +1,0 @@
-<Response>
-   <Gather input="speech" timeout="3">
-        <Play loop="1">https://upload.wikimedia.org/wikipedia/commons/transcoded/c/c0/Piano_ac%C3%BAstico%2C_acorde_F.ogg/Piano_ac%C3%BAstico%2C_acorde_F.ogg.mp3</Play>
-    </Gather>
-</Response>
