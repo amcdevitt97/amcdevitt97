@@ -1,0 +1,39 @@
+
+.container{
+    justify-content: center;
+    margin:auto;
+    min-height: 100%;
+    display: flex;
+    padding: 2.5rem;
+    text-align: center;
+}
+
+.button{
+    border-radius:0.375rem;
+    border-width: 7px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    font-size: 3em;
+    font-weight: 600;
+    border-color: rgb(208, 227, 102);
+    background-color: rgb(116, 56, 159);
+    color:rgb(208, 227, 102);
+    font-family:cursive;
+}
+
+.input{
+    border-radius:0.375rem;
+    border-width: 4px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    font-size: 3em;
+    font-weight: 600;
+    border-color: rgb(186, 26, 130);
+    background-color: rgb(218, 184, 216);
+    font-family: monospace;
+}
+
